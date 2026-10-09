@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Наноблогер — путь к тысяче</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="ava"><svg viewBox="0 0 48 48"><ellipse cx="24" cy="26" rx="17" ry="20" fill="#238636"/><circle cx="17" cy="18" r="6" fill="#7ee787"/><circle cx="31" cy="18" r="6" fill="#7ee787"/><circle cx="17" cy="18" r="2.5" fill="#0d1117"/><circle cx="31" cy="18" r="2.5" fill="#0d1117"/><path d="M16 32 Q24 38 32 32" stroke="#0d1117" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+    <div>
+      <h1 id="ctitle">наноблогер</h1>
+      <p id="mode">режим: демо</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <div class="nums"><b id="subs">0</b><span id="goal">/ 100</span></div>
+    <div class="bar"><div id="fill"></div></div>
+    <div class="pct" id="pct">0%</div>
+    <div id="medal" class="medal"></div>
+    <div id="stats" class="stats"></div>
+    <div id="latest" class="latest"></div>
+    <div class="btns">
+      <button id="plus">+ подписчик</button>
+      <button id="reset" class="ghost">сброс</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>ютуб-канал</h2>
+    <div class="row">
+      <label>канал<input id="channel" placeholder="@neironkabot_top или ID"></label>
+      <label>api-ключ<input id="apikey" type="password" placeholder="AIza..."></label>
+    </div>
+    <div id="err" class="err"></div>
+    <button id="save">подтянуть статистику</button>
+    <p class="hint">ключ: console.cloud.google.com → новый проект → YouTube Data API v3 → учетные данные. хранится только у тебя в браузере.</p>
+  </section>
+
+  <section class="card">
+    <h2>ачивки</h2>
+    <div id="goals"></div>
+  </section>
+</div>
+<canvas id="liz"></canvas>
+<script src="app.js"></script>
+</body>
+</html>
